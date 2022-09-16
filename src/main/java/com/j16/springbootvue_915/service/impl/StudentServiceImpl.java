@@ -37,4 +37,14 @@ public class StudentServiceImpl implements StudentService {
     public int addStudent(Student student) {
         return studentDao.insert(student);
     }
+
+    @Override
+    public Student getStudent(int studentNo) {
+        return studentDao.selectById(studentNo);
+    }
+
+    @Override
+    public int updateStudent(Student student) {
+        return studentDao.updateById(student);
+    }
 }
