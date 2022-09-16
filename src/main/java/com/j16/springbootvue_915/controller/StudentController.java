@@ -31,8 +31,6 @@ public class StudentController {
 
     @GetMapping("/deleteStudent")
     public String deleteStudent(@RequestParam("studentNo") int studentNo){
-        System.out.println(studentNo);
-        String i = JSON.toJSONString(studentService.deleteStudent(studentNo));
-        return  i;
+        return  JSON.toJSONString(studentService.deleteStudent(studentNo));
     }
 }
