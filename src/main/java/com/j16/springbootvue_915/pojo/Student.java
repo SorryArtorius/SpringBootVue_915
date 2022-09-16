@@ -4,6 +4,7 @@ package com.j16.springbootvue_915.pojo;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import lombok.Data;
 
 /**
@@ -43,4 +44,7 @@ public class Student {
 
     @TableField("identityCard")
     private String identityCard;
+
+    @TableField(exist = false)
+    private Grade grade;
 }

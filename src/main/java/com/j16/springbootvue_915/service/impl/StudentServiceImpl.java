@@ -32,4 +32,9 @@ public class StudentServiceImpl implements StudentService {
     public int deleteStudent(int studentNo) {
         return studentDao.deleteById(studentNo);
     }
+
+    @Override
+    public int addStudent(Student student) {
+        return studentDao.insert(student);
+    }
 }

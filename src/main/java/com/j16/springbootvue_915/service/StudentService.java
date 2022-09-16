@@ -12,4 +12,7 @@ public interface StudentService {
     List<Student> studentList();
 
     int deleteStudent(int studentNo);
+
+
+    int addStudent(Student student);
 }
